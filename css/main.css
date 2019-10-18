@@ -1,0 +1,622 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit;}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearFix{
+    clear: both;
+}
+/*Header*/
+header{
+    background-image: url("../images/assets/main-image-1.jpeg");
+    height: 53vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-size: 1.5vw;
+}
+h3{
+    font-size: 1vw;
+}
+header h1, section h1{
+    font-size: 3.2vw;
+}
+nav{
+    max-width: 60%;
+    margin: auto;
+}
+.logo img{
+    float: left;
+    width: 15%;
+    margin-top: 10%;
+}
+nav ul{
+    float: right;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 0.8vw;
+    margin-top: 11%;
+    width: 65%;
+}
+nav li{
+    margin: 0 3%;
+}
+nav li:nth-child(8){
+    margin: 0;
+}
+nav ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover{
+    border-bottom: 2px solid #eeb013;
+    padding-bottom: 1vw;
+}
+.active{
+    border-bottom: 2px solid #eeb013;
+    padding-bottom: 1vw;
+}
+/*titles*/
+.title{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.titleA{
+    top: 40%;
+    left: 50%;
+}
+.titleB{
+    top: 50%;
+    left: 50%;
+}
+.titleC{
+    top: 65%;
+    left: 50%;
+}
+/*Box*/
+.box{
+    border: solid white;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    background-color: transparent;
+    transition: .5s ease;
+}
+.boxSmall{
+    border-width: 0.1vw;
+    padding: 0.8% 3%;
+    font-size: 0.7vw;
+}
+.boxMedium{
+    border-width: 0.2vw;
+    padding: 0.8% 3.5%;
+    font-size: 1vw;
+}
+.boxBig{
+    border-width: 0.3vw;
+    padding: 0.8% 4%;
+    font-size: 3.2vw;
+}
+.boxDate{
+    padding: 2%;
+    font-size: 1vw;
+}
+.boxBlack{
+    border: solid black;
+    background-color: black;
+    color:white;
+}
+.box:hover{
+    color: black;
+    background-color: rgba(255,255,255,0.9);
+    border: none;
+}
+/*Section*/
+section{
+    max-width: 60%;
+    margin: auto;
+}
+.container{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin: 3% 1%;
+}
+.container img{
+    width: 100%;
+}
+.fontMed{
+    font-size: 2vw;
+}
+.circleIcon{
+    border: 1px solid black;
+    padding: 1vw;
+    border-radius: 50%;
+    font-size: 2vw;
+}
+.circleIcon:hover{
+    background-color: #141414;
+    color: white;
+    transition: 0.5s ease;
+}
+.offer{
+    max-width: 60%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*main1*/
+.main1{
+    background-image: url("../images/assets/main-image-2.jpeg");
+    position: relative;
+    height: 38vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.main1 h1 ,.main2 h1{
+    font-size: 1.7vw;
+}
+.titleAlined{
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.titleRight{
+    top: 30%;
+    left: 50%;
+}
+.paragraphRight{
+    top: 45%;
+    left: 50%;
+    font-size: 0.8vw;
+    text-transform: none;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+}
+.priceRight{
+    top: 50%;
+    left: 50%;
+}
+.buttonRight{
+    top: 60%;
+    left: 50%;
+}
+.yellowFont{
+    color: #eeb013;
+}
+.boxYellow{
+    background-color: #eeb013;
+    color: black;
+    border-color: #eeb013;
+}
+
+.main2{
+    background-image: url("../images/assets/main-image-3.jpeg");
+    position: relative;
+    height: 38vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.titleMainLeft{
+    top: 30%;
+    left: 20%;
+}
+.paragraphMainLeft{
+    top: 45%;
+    left: 20%;
+    font-size: 0.8vw;
+    text-transform: none;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+}
+.buttonMainLeft{
+    top: 55%;
+    left: 20%;
+}
+/*Fashion*/
+.fashion{
+    display: flex;
+}
+.fashion img{
+    width: calc(100% / 3);
+}
+.fashionNewsButton{
+    text-align: center;
+}
+.boxSimple{
+    border-color: #e4e4e4;
+    color: #141414;
+    margin: 5% auto;
+    border-width: 0.1vw;
+}
+.boxSimple:hover{
+    background-color: #141414;
+    color: white;
+}
+.fashionNews{
+    max-width: 60%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+.zoom{
+    transform: scale(2) translate(25%, 50%);
+}
+.status{
+    padding: 1%;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.fashionNews span{
+    margin-right: 5%;
+    color: #141414;
+    font-size: 0.6vw;
+}
+
+/*Testimonial*/
+.testimonialBox{
+    text-align: center;
+}
+
+.crimsonText{
+    font-family: 'Crimson Text', serif;
+}
+.testimonial{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.testimonial span, .testimonial p{
+    color: #e4e4e4;
+    font-size: 0.5vw;
+}
+.testimonial span i{
+    margin: 0.2%;
+}
+/*Brand*/
+.brandBox{
+    text-align: center;
+}
+/*partner*/
+
+.partner{
+    max-width: 60%;
+    margin: 0 auto 5% auto;
+    display: flex;
+    justify-content: space-around;
+}
+.partner img{
+    width: 5vw;
+    height: auto;
+}
+/*article*/
+article{
+    background-image: url("../images/assets/main-image-4.jpeg");
+    position: relative;
+    height: 38vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+article h1{
+    font-size: 1.7vw;
+}
+article p{
+    font-size: 0.8vw;
+}
+.titleLeft{
+    top: 30%;
+    left: 35%;
+    color: black;
+}
+.paragraphLeft{
+    top: 40%;
+    left: 35%;
+    text-transform: none;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    color: #141414;
+    text-align: center;
+}
+.buttonLeft{
+    top: 60%;
+    left: 35%;
+}
+
+/*Footer*/
+footer{
+    background-color: #141414;
+    font-family: 'Montserrat', sans-serif;
+}
+footer .footer{
+    max-width: 60%;
+    margin: auto;
+}
+footer h5{
+    color: white;
+    font-size: 0.8vw;
+    text-transform: uppercase;
+}
+footer li{
+    list-style-type: none;
+    text-transform: uppercase;
+    color: #e4e4e4;
+    font-size: 0.5vw;
+}
+/*columns*/
+.col{
+    display: inline-block;
+    margin: 5% 0.5%;
+    clear: both;
+}
+.col1{
+    width: 15%;
+}
+.col2{
+    width: 20%;
+}
+.col3{
+    width: 33%;
+}
+.col4{
+    width: 45%;
+    color: #e4e4e4;
+}
+.col4 i{
+    margin: 0 2%;
+}
+.right{
+    float: right;
+}
+/*For orange color*/
+.orange{
+    color: orange;
+}
+/*For underline*/
+.underline{
+    border-bottom: 2px solid orange;
+    padding-bottom: 0.3vw;
+    width: 15%;
+}
+/*For line Gaps*/
+.lineGapBig{
+    line-height: 200%;
+}
+.lineGapMed{
+    line-height: 150%;
+}
+.lineGapSmall{
+    line-height: 120%;
+}
+footer p{
+    font-size: 0.6vw;
+    color: #e4e4e4;
+    margin-top: 5%;
+}
+.twitter{
+    margin: 5% 0;
+}
+.twitter i{
+    margin-right: 5%;
+}
+.instagram{
+    position: relative;
+    display: inline-block;
+    width: calc(100% / 3 - 5%);
+    margin: 3% 1%;
+}
+.instagram img{
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #eeb013;
+}
+.instagram .overlay i{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.instagram:hover .overlay {
+    opacity: 0.8;
+}
+footer .footerLogo{
+    margin-top: 5%;
+}
+.verticalLine{
+    border-right: 2px solid #e4e4e4;
+    height: 50%;
+}
+.footerInfo{
+    margin-top: 5%;
+    text-transform: uppercase;
+}
+
+/*Media Query*/
+@media only screen and (max-width: 1050px){
+    header .titleA{
+        top: 20%;
+    }
+    header .titleB{
+        top: 30%;
+    }
+    header .titleC{
+        top: 40%;
+    }
+    .lineGapBig{
+        line-height: 150%;
+    }
+    footer h5{
+        font-size: 1vw;
+    }
+    footer .footer{
+        max-width: 70%;
+    }
+    .fashionNews h5{
+        font-size: 1vw;
+    }
+    .fashionNews span{
+        font-size: 0.7vw;
+    }
+}
+@media only screen and (max-width: 700px){
+    header .titleA{
+        top: 15%;
+    }
+    header .titleB{
+        top: 20%;
+    }
+    header .titleC{
+        top: 25%;
+    }
+    .main1 h1, .main2 h1, article h1{
+        font-size: 2.5vw;
+    }
+    .main1 p, .main2 p{
+        font-size: 2vw;
+    }
+    article p{
+        font-size: 1.5vw;
+    }
+    h1, section h1{
+        font-size: 4vw;
+    }
+    h2{
+        font-size: 2vw;
+    }
+    h3{
+        font-size: 1.5vw;
+    }
+    .boxSmall{
+        font-size: 1vw;
+    }
+    .boxMedium{
+        font-size: 1.5vw;
+    }
+    .boxBig{
+        font-size: 2vw;
+    }
+
+    footer h5{
+        font-size: 1.5vw;
+    }
+    footer .footer{
+        max-width: 80%;
+    }
+    .col, .col1, .col2, .col3{
+        width: 40%;
+    }
+    footer h5{
+        font-size: 3vw;
+    }
+    footer p, footer li{
+        font-size: 2vw;
+    }
+
+    .circleIcon{
+        font-size: 3vw;
+        padding: 1vw;
+    }
+}
+@media only screen and (max-width: 600px){
+    .container, .col, .col1, .col2, .col3{
+        width: 100%;
+    }
+    header .titleA{
+        top: 10%;
+    }
+    header .titleB{
+        top: 15%;
+    }
+    header .titleC{
+        top: 20%;
+    }
+    h1, section h1{
+        font-size: 6vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    h3{
+        font-size: 4vw;
+    }
+    .boxSmall{
+        font-size: 2vw;
+    }
+    .boxMedium{
+        font-size: 4vw;
+    }
+    .boxBig{
+        font-size: 6vw;
+    }
+    footer .footer{
+        max-width: 100%;
+    }
+    footer h5{
+        font-size: 4vw;
+    }
+    footer p, footer li{
+        font-size: 3vw;
+    }
+    .fashionNews span, .fashionNews h5{
+        font-size: 3vw;
+    }
+
+    .circleIcon{
+        font-size: 4vw;
+        padding: 1.5vw;
+    }
+}
+@media only screen and (max-width: 400px){
+    section, .fashionNews{
+        max-width: 100%;
+    }
+    .container{
+        margin: 0;
+    }
+    header .titleA{
+        top: 5%;
+    }
+    header .titleB{
+        top: 10%;
+    }
+    header .titleC{
+        top: 15%;
+    }
+
+    .circleIcon{
+        font-size: 4vw;
+        padding: 2vw;
+    }
+}
